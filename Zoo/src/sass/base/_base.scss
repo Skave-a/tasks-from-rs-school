@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  //color: $brand-color;
+  text-decoration: none;
+
+  // @include on-event {
+  //   color: $text-color;
+  //   text-decoration: underline;
+  // }
+}
+
+//Zoo-base
+
+html {
+  font-size: 10px;
+}
+
+
+
+.wrapper {
+  max-width: $desktop_petstory-width;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    width: $small_desktop-width;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    width: $tablet-width;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: $mobile_petstory-width;
+  }
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 120%;
+  color: $black_blue;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 130%;
+  color: $black_blue;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+
+  &:hover {
+    color: $hover-state;
+    transition: all 0.5s;
+  }
+}
+
+// * {
+//   outline: solid 1px red;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: #F90;
+//   background-image: -webkit-linear-gradient(45deg,
+//       rgba(255, 255, 255, .2) 25%,
+//       transparent 25%,
+//       transparent 50%,
+//       rgba(255, 255, 255, .2) 50%,
+//       rgba(255, 255, 255, .2) 75%,
+//       transparent 75%,
+//       transparent)
+// }

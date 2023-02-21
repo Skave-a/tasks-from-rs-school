@@ -1,0 +1,152 @@
+.default {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: $default-state;
+  border-radius: 2.5rem;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    color: orange;
+    background: #ffffffcc;
+    border: orange solid 1px;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.default.circle {
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  margin: 0;
+  z-index: 3;
+
+  &:hover {
+    color: orange;
+    background: #4B9200;
+    ;
+    border: none;
+    transition: all 0.2s ease-out;
+  }
+
+  @media (max-width: $desktop_petstory-width-max) {
+    position: absolute;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+
+}
+
+.default.rigth.circle {
+  @media (max-width: $desktop_petstory-width-max) {
+    right: 58.4%;
+    right: 35%;
+
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    right: 38%;
+    top: 343px;
+  }
+}
+
+.default.left.circle {
+  @media (max-width: $desktop_petstory-width-max) {
+    right: 35%;
+    right: 58.4%;
+
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    right: 52.5%;
+    top: 343px;
+  }
+}
+
+.default.square {
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+.default.sect-1 {
+  margin-right: 10rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    margin-right: 11rem;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+  }
+
+}
+
+.default.choo {
+  margin-bottom: 10rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    margin-bottom: 14rem;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 59px;
+  }
+
+}
+
+.default.square.sec-5 {
+  @media (max-width: $small_desktop-width-max) {
+    margin: 0 auto;
+    width: 240px;
+    height: 54px
+  }
+}
+
+.default__watch {
+
+  @media (max-width: $small_desktop-width-max) {
+    position: absolute;
+    bottom: 41px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    bottom: -27px;
+  }
+}
+
+.default.don {
+  margin-bottom: 30.02px;
+  margin-right: 335px;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    margin-right: 268px;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-bottom: 6px;
+    margin-right: 118px;
+    margin-bottom: 30px;
+
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-right: 0;
+
+  }
+
+}

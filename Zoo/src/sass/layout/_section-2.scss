@@ -1,0 +1,155 @@
+.section-2 {
+  position: relative;
+
+  @media (max-width: $small_desktop-width-max) {
+    overflow: hidden;
+    padding-top: 67px;
+    padding-top: 92px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 63px;
+    padding-top: 55px;
+  }
+}
+
+.section-2__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    margin-bottom: 14.4rem;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-bottom: 8.2rem;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 43px;
+  }
+}
+
+.section-2__article {
+  max-width: 46.5rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    max-width: 45.4rem;
+    margin-top: -8px;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    max-width: 495px;
+  }
+
+}
+
+.section-2__caption {
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-left: 1.7px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 11px;
+  }
+}
+
+.section-2__p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 137%;
+  color: $black_blue;
+}
+
+.section-2__p.first {
+  margin-bottom: 5.4rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 2px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+.section-2__p.second {
+  line-height: 137%;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: $black_blue;
+  margin-bottom: 3.4rem;
+
+  @media (max-width: $small_desktop-width-max) {
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 2px;
+    margin-bottom: 9px;
+  }
+}
+
+.section-2__flower {
+  position: absolute;
+  top: -13rem;
+  right: 0;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    display: none;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    display: block;
+    width: 160px;
+    top: -6px;
+    right: -30px;
+    top: 19px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 71px;
+    top: -6px;
+    right: -39px;
+  }
+}
+
+.section-2__img {
+  @media (max-width: $desktop_petstory-width-max) {
+    width: 455px;
+    height: 408px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    display: none;
+  }
+
+}

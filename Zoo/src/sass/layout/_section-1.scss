@@ -1,0 +1,144 @@
+.section-1 {
+  background: url(../img/Giant-Panda.png) no-repeat;
+  margin-bottom: 14rem;
+  background-position: center;
+  padding-bottom: 10rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    padding-bottom: 4.8rem;
+    margin-bottom: 10.9rem;
+    background: url(../img/Giant--Panda.png) no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    padding-bottom: 0rem;
+    background-size: contain;
+    margin-bottom: 0px;
+    position: relative;
+    top: 26px;
+    background-size: 104%;
+    background-position-y: -32px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-position-x: 0px;
+    background-position-y: 33px;
+    background-size: 100%;
+    background-position: center;
+    background-size: contain;
+    top: 0px;
+    top: -7px;
+    top: -10px;
+  }
+}
+
+.section-1>.wrapper {
+  @media (max-width: $tablet-width-max) {
+    overflow: visible;
+  }
+}
+
+
+.section-1__block {
+  @media (max-width: $small_desktop-width-max) {
+    padding-bottom: 4.5rem;
+    position: relative;
+    padding-top: 10px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 35px;
+    padding-top: 44px;
+  }
+
+}
+
+.section-1__caption {
+  position: relative;
+  width: 57.4rem;
+  margin-left: auto;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    width: 458.25px;
+    margin-right: 57px;
+    margin-top: -13px;
+
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    width: 293px;
+    margin-top: 10px;
+    margin-right: -3px;
+  }
+
+
+  @media (max-width: $tablet-width-max) {
+    width: 147px;
+    margin-top: 21px;
+    margin-right: 0px;
+  }
+
+}
+
+.caption__circle {
+  width: 46.5rem;
+  height: 46.5rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 50%;
+  margin-bottom: 6.9rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    width: 367px;
+    height: 367px;
+    margin-bottom: 4.8rem;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    width: 237.6px;
+    height: 237.6px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 119.09px;
+    height: 119.09px;
+  }
+}
+
+.caption__p {
+  font-weight: 700;
+  font-size: 10.6496rem;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  margin: 0;
+  top: 7.4rem;
+  left: 7.3rem;
+
+  @media (max-width: $desktop_petstory-width-max) {
+    font-size: 85px;
+    line-height: 75%;
+    top: 5.6rem;
+    left: 6.1rem;
+  }
+
+  @media (max-width: $small_desktop-width-max) {
+    font-weight: 700;
+    font-size: 54.2894px;
+    line-height: 75%;
+    top: 38px;
+    left: 39px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 28px;
+    top: 19px;
+    left: 18px;
+  }
+}
+
+.caption__p-special {
+  color: $yellow;
+}
