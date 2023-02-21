@@ -1,0 +1,182 @@
+// * {
+//   outline: 1px red solid;
+// }
+
+body {
+  background-color: rgb(245, 214, 214);
+  user-select: none;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 145px;
+  width: 834px;
+  height: 833px;
+  position: relative;
+
+
+  @media (max-width: 999px) {
+    width: 500px;
+    margin-top: 190px;
+    width: 601px;
+  }
+
+  @media (max-width: 767px) {
+    width: 300px;
+    width: 234px;
+  }
+}
+
+.game {
+  //position: absolute;
+  border-radius: 4px;
+  top: 50px;
+  width: 500px;
+  height: 500px;
+  width: 834px;
+  height: 834px;
+
+  @media (max-width: 999px) {
+    width: 598px;
+    height: 606px;
+  }
+
+  @media (max-width: 767px) {
+    width: 300px;
+    height: 300px;
+    width: 269px;
+  }
+}
+
+
+
+.sell {
+  position: absolute;
+  background-color: #fbfbfb;
+  color: rgba(224, 66, 106, 0.8);
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 84px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  @media (max-width: 999px) {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 42px;
+
+  }
+
+  @media (max-width: 450px) {
+
+    width: 10px;
+    height: 10px;
+    font-size: 9px;
+    line-height: 10px;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  width: 300px;
+  top: 50px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    left: 12%;
+    width: 289px;
+    width: 253px;
+  }
+}
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #ff9595ad;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+.buttons {
+  margin-bottom: 10px;
+  width: 238px;
+}
+
+select {
+  color: rgb(117, 39, 98);
+  cursor: pointer;
+  background: rgba(rgb(212, 190, 190), 0.3);
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 0.5em;
+  padding-right: 2em;
+  appearance: none;
+}
+
+.level {
+  height: 35px;
+}
+
+.h1 {
+  margin: 0;
+  margin-left: 10px;
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+
+h2 {
+  margin: 6px;
+}
+
+.score {
+  @media (max-width: 767px) {
+    margin: 3px;
+    font-size: 10px;
+  }
+}
+
+.img__sound {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+
+  }
+}
+
+
+.sakura {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+}
