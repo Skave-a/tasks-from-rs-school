@@ -1,0 +1,176 @@
+.stories__bgr {
+  background: url(../img/bgr-str.jpg) no-repeat;
+  background-size: cover;
+  height: 133rem;
+
+  @media (max-width: $max-tablet) {
+    height: 69rem;
+  }
+
+  @media (max-width: $max-mob) {
+    height: 75rem;
+  }
+}
+
+.wrapper {}
+
+.stories__capt {
+  margin-bottom: 4rem;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 1rem;
+  }
+}
+
+.stories__blocks {
+  background-color: $color-search-form;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  height: 123rem;
+
+  @media (max-width: $max-tablet) {
+    height: 62rem;
+    padding-top: 1rem;
+  }
+
+  @media (max-width: $max-mob) {
+    height: 69rem;
+  }
+}
+
+.stories__block {
+  display: flex;
+  //padding-top: 4rem;
+
+}
+
+.stories__img {
+  margin-right: 4rem;
+  width: 40rem;
+  height: 25rem;
+  margin-bottom: 3rem;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $max-tablet) {
+    width: 15.5rem;
+    height: 13rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.6rem;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.stories__img.a {
+  background: url(../img/Tai.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.stories__img.b {
+  background: url(../img/Utah.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.stories__img.c {
+  background: url(../img/moun.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.stories__img.d {
+  background: url(../img/jour.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 1rem;
+  }
+}
+
+.stories__img.last {
+  margin-bottom: 4rem;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 1rem;
+  }
+}
+
+.stories__article {
+  max-width: 76rem;
+
+  @media (max-width: $max-tablet) {
+    width: 19.5rem;
+  }
+
+  @media (max-width: $max-mob) {
+    width: 15.5rem;
+  }
+}
+
+.stories__name {
+  color: $color-button;
+  margin-bottom: 2.4rem;
+
+  @media (max-width: $max-tablet) {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+}
+
+.stories__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-button;
+
+  //width: 76rem;
+  @media (max-width: $max-tablet) {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+}
+
+.stories__link {
+  @media (max-width: $max-tablet) {
+    line-height: 0rem;
+  }
+}
+
+.stories__b {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-button;
+  text-decoration: underline;
+
+  @media (max-width: $max-tablet) {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+}
+
+.stories__hide {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-button;
+
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}

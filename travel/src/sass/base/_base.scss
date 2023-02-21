@@ -1,0 +1,103 @@
+// html {
+//   overflow-x: hidden;
+//   margin-right: calc(-1 * (100vw - 100%));
+// }
+
+html {
+  font-size: 10px;
+  font-family: 'Aleo', serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  //width: 144rem;
+  height: 370rem;
+
+  @media (max-width: $max-tablet) {
+    height: 140rem;
+  }
+}
+
+.body.active {
+  overflow: hidden;
+}
+
+h1 {
+  color: $color-button-text;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 9.6rem;
+}
+
+h2 {
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  color: $color-caption;
+  text-align: center;
+
+  @media (max-width: $max-tablet) {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+}
+
+a {
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: $color-button-text;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  position: relative;
+}
+
+
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: $color-search-form;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+
+
+body.overlay:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 5;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  top: -9rem;
+}
+
+// * {
+//   outline: solid 1px red;
+// }

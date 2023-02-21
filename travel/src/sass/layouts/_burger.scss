@@ -1,0 +1,65 @@
+%hamburger-line {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  background-repeat: 0.5rem;
+  width: 100%;
+  height: 0.267rem;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 2.625rem;
+  height: calc(1.067rem + 0.267rem + 0.267rem);
+  right: -2.5rem;
+
+  &:before {
+    @extend %hamburger-line;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    @extend %hamburger-line;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (max-width: $max-ham) {
+
+    display: inline-block;
+  }
+}
+
+.hamburger__line {
+  @extend %hamburger-line;
+  top: calc(50% - 0.267rem / 2);
+}
+
+.hamburger.active {
+  .hamburger__line {
+    display: none;
+  }
+
+  &:before {
+    @extend %hamburger-line;
+    transform: rotate(45deg);
+    transition: all 0.5s ease 0s;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  &:after {
+    @extend %hamburger-line;
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all 0.5s ease 0s;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  position: absolute;
+  z-index: 3;
+  right: 12rem;
+  top: 3rem;
+}

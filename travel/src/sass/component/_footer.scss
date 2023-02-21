@@ -1,0 +1,89 @@
+footer {
+  position: relative;
+  top: -15.5rem;
+}
+
+.wrapper.footer {
+  display: flex;
+  padding: 1.9rem 0;
+  align-items: center;
+  //position: fixed;
+  bottom: 0;
+  //background: #000;
+  //position: absolute;
+  bottom: 0;
+  justify-content: flex-end;
+  justify-content: space-between;
+  //column-gap: 33rem;
+
+  @media (max-width: $max-tablet) {
+    justify-content: center;
+    justify-content: flex-start;
+  }
+}
+
+
+
+.footer__p {
+  width: 26rem;
+  left: 590px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $color-button-text;
+  margin-left: 37%;
+  margin-left: 6.5rem;
+
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.footer__connect {
+  display: flex;
+  column-gap: 2rem;
+
+  //margin-left: 32.8rem;
+  @media (max-width: $max-tablet) {
+    margin-left: 3.5rem;
+  }
+}
+
+
+
+.footer__img:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.footer__link:hover:after,
+.footer__link:focus:after {
+  width: 0%;
+}
+
+// .footer__link.in {
+//   mask-image: url(../img/icons/inst.svg);
+// }
+
+// .footer__link.vid {
+//   mask-image: url(../img/icons/akar-icons_video.svg);
+
+// }
+
+// .footer__link.tw {
+//   mask-image: url(../img/icons/akar-icons_twitter-fill.svg);
+
+// }
+
+// .footer__link {
+//   width: 3.365rem;
+//   height: 3.365rem;
+//   background-color: $color-button-text;
+//   mask-size: cover;
+// }
+
+// .footer__link:hover {
+//   background-color: $color-button;
+// }

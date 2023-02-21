@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 120rem;
+  //column-gap: 17.7rem;
+
+  @media (max-width: $max-tablet) {
+    max-width: 36rem;
+    column-gap: 0rem;
+  }
+}
+
+// header,
+// section,
+// footer {
+//   width: 144rem;
+// }

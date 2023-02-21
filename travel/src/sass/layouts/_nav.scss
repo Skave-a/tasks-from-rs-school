@@ -1,0 +1,115 @@
+.nav {
+  padding: 3.5rem 0 3.4rem 0;
+  margin-right: 3.5rem;
+
+  @media (max-width: $max-tablet) {
+    padding: 0;
+  }
+
+  @media (max-width: $max-ham) {
+    padding: 0;
+    transition: all 1s ease 0s;
+
+  }
+
+}
+
+.nav.active {
+  background: rgba(41, 41, 41, 0.6);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  transition: all 1s ease 0s;
+}
+
+.nav__item {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $color-button-text;
+
+  @media (max-width: $max-ham) {
+    margin-right: 1.5rem;
+
+    &:first-child {
+      margin-top: 4.4rem;
+    }
+  }
+}
+
+// .nav__items {
+
+//   display: flex;
+
+//   column-gap: 4.2rem;
+
+//   @media (max-width: $max-ham) {
+//     display: none;
+//   }
+
+// }
+
+// .nav__items.active {
+//   display: block;
+//   top: 0rem;
+//   right: 0rem;
+//   position: absolute;
+//   width: 16.5rem;
+//   background: #F2785C;
+//   height: 25rem;
+//   border-radius: 1rem;
+//   display: flex;
+//   flex-direction: column;
+//   align-content: flex-end;
+//   align-items: flex-end;
+//   row-gap: 1rem;
+// }
+
+.nav__item.hide {
+  display: none;
+
+  @media (max-width: $max-ham) {
+    display: block;
+  }
+}
+
+.nav__items {
+
+  display: flex;
+
+  column-gap: 4.2rem;
+
+  @media (max-width: $max-ham) {
+    top: 0rem;
+    position: absolute;
+    width: 16.5rem;
+    background: #F2785C;
+    height: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    row-gap: 1rem;
+    //display: none;
+    right: -16.5rem;
+    //right: -100%;
+    transition: 1s all ease;
+  }
+
+  @media (max-width: $max-tablet) {
+    column-gap: 2.2rem;
+  }
+}
+
+.nav__items.active {
+  display: flex;
+  transition: 1s all ease;
+  right: 0rem;
+}

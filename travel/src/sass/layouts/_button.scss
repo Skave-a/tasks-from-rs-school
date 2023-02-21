@@ -1,0 +1,133 @@
+button {
+  background: $color-button;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: $color-button-text;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.header__button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  width: 10.3rem;
+  height: 4.1rem;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  margin: 0;
+
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.preview__button {
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  padding: 1.35rem 3.25rem;
+  margin-right: 1.8rem;
+
+  @media (max-width: $max-tablet) {
+    width: 9.2rem;
+    height: 3rem;
+    padding: 0;
+    margin-right: 0;
+    margin-right: 0.9rem;
+  }
+}
+
+.preview__button:active {
+  transition: 1s;
+  font-size: x-large;
+  position: relative;
+
+  .preview__img {
+    display: block;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+
+    @media (max-width: $max-tablet) {
+      display: none;
+      font-size: smaller;
+    }
+  }
+}
+
+.destinations__button {
+  width: 22.8rem;
+  height: 5.9rem;
+  left: 60.7rem;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  margin-bottom: 8rem;
+
+  @media (max-width: $max-tablet) {
+    width: 9.2rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.destinations__button:hover {
+  //margin-bottom: 7.9rem;
+}
+
+.stories__button {
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  width: 22.8rem;
+  height: 5.9rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: $max-tablet) {
+    width: 9.2rem;
+    height: 3.0rem;
+  }
+
+}
+
+.arrow {
+  width: 3.5rem;
+  height: 3.25rem;
+  background-color: white;
+  mask-size: cover;
+  mask-image: url(../img/icons/bi_arrow-right.svg);
+  margin-right: 1.25rem;
+
+  @media (max-width: $max-tablet) {
+    width: 0.875rem;
+    height: 0.763rem;
+    margin-right: 0.662rem;
+  }
+}
+
+button:hover {
+  transition: 0.3s;
+  color: $color-button;
+  background-color: $color-button-text;
+  outline: $color-button solid 0.1rem;
+
+  .arrow {
+    background-color: $color-button;
+  }
+}
+
+button:active {
+  font-size: xx-large;
+  transition: 0.2s;
+
+  @media (max-width: $max-tablet) {
+    font-size: small;
+  }
+}

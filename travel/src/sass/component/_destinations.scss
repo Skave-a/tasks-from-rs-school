@@ -1,0 +1,87 @@
+.destinations {
+  max-width: 144rem;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: $max-tablet) {
+    position: relative;
+    width: 36rem;
+  }
+
+  @media (max-width: $max-mob) {
+    width: 32rem;
+  }
+}
+
+.destinations__capt {
+  margin-bottom: 4.6rem;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 2rem;
+  }
+}
+
+.destinations__slider {
+  width: 252rem;
+  position: relative;
+  right: 108rem;
+}
+
+.destinations__blocks {
+  display: flex;
+  column-gap: 6rem;
+  margin-bottom: 2.4rem;
+  position: relative;
+  right: 37.5%;
+
+  @media (max-width: $max-tablet) {
+    right: 0%;
+    margin-bottom: 1rem;
+    transition: 1s all ease;
+  }
+}
+
+.destinations__block {
+  //width: 80rem;
+  //height: 80rem;
+  //background: url(.jpg), #FFFFFF;
+  border-radius: 1.6rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.destinations__img {
+  width: 80rem;
+  height: 80rem;
+
+  @media (max-width: $max-tablet) {
+    width: 36rem;
+    height: 21rem;
+    border-radius: 1.6rem;
+  }
+
+  @media (max-width: $max-mob) {
+    width: 32rem;
+    height: 20rem;
+  }
+}
+
+.destinations__p {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: $color-button-text;
+  position: absolute;
+  bottom: 4rem;
+  left: 1.5rem;
+  text-transform: uppercase;
+
+  @media (max-width: $max-tablet) {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    top: 0.8rem;
+    left: 1.5rem;
+  }
+}

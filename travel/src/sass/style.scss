@@ -1,0 +1,26 @@
+// base
+@import "base/_reset.scss";
+
+// abstract
+@import "abstract/_constants.scss";
+@import "abstract/_mixins.scss";
+
+// base
+@import "base/_base.scss";
+@import "base/_fonts.scss";
+
+// Components
+@import "component/_header.scss";
+@import "component/_destinations.scss";
+@import "component/_footer.scss";
+@import "component/_preview.scss";
+@import "component/_steps.scss";
+@import "component/_stories.scss";
+
+// layouts
+@import "layouts/_wrapper.scss";
+@import "layouts/_button.scss";
+@import "layouts/_nav.scss";
+@import "layouts/_slider.scss";
+@import "layouts/_burger.scss";
+@import "layouts/_pop-up.scss";
