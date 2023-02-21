@@ -1,0 +1,239 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: arial;
+  font-size: 15px;
+  font-weight: 400;
+  color: #545454;
+  background-color: #1a2e54; 
+  padding-bottom: 20px;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+}
+
+.main {
+  // max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #545454;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.button__link {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  color: #545454;
+  margin: 0 5px 5px 0px;
+  transition: all 0.5s;
+  z-index: 2;
+
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: #aaa;
+    border: none;
+  }
+
+  &:hover {
+    background-color: #0258ad;
+    border: none;
+    color: #fff;
+  }
+}
+
+.display-none {
+  display: none !important;
+}
+
+h2.subtitle,
+h3.subtitle,
+h4.subtitle {
+  margin: 10px 0;
+}
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
+}
+////////////////////////////////////////////
+.app {
+  padding: 0px 50px 50px 50px;
+  color: #fff;
+}
+.header {
+  display: flex;
+  padding: 1vh 0px;
+}
+.page-pagination {
+  font-size: 21px;
+}
+.auto-item {
+  border-bottom: 5px solid grey;
+  margin-bottom: 10px;
+}
+.control {
+  padding: 1vh 0px;
+}
+.color-form {
+  display: flex;
+  padding: 10px 0px;
+  gap: 10px;
+  align-items: center;
+}
+.control-color {
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  margin: 0 10px;
+}
+.page-title {
+  font-size: 25px;
+}
+
+.garage__btns, .garage__trace, .item__btns, .pagination{
+  display: flex;
+  align-items: center;
+}
+
+.garage__items, .pagination{
+  padding: 1vh 0px;
+}
+
+.garage__item {
+  padding: 5px;
+}
+
+.auto-title {
+  font-size: 20px;
+  padding: 0 20px;
+}
+.auto-control {
+  display: flex;
+}
+
+.pagination-wrapper {
+  display: flex;
+}
+
+.img__auto {
+  height: 70px;
+  position: absolute;
+    left: 100px;
+    transform: scale(-1, 1);
+}
+
+.img__flag{
+  height: 50px;
+  position: absolute;
+  right: 55px;
+  bottom: 0;
+}
+
+.garage__trace{
+  position: relative;
+  border-bottom: 1px red dashed;
+}
+
+.img__car {
+  height: 70px;
+  left: 50px;
+}
+
+.none {
+  display: none;
+}
+
+.winners{
+  display: none;
+}
+
+.app.hide {
+  .winners{
+    display: block;
+  }
+  .garage__wrapper{
+    display: none;
+  }
+}
+
+table { 
+  width: 50%;
+  border-collapse: collapse;
+  }
+  th, td { 
+  text-align: center; 
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  }
+
+  button:disabled{
+    background-color: #999;
+    color: #545454;
+  }
+
+  button:disabled:hover{
+    background-color: #999;
+    color: #545454;
+    cursor: auto;
+  }
+
+  .th-wins, .th-time {
+    cursor: pointer;
+    &:hover {
+      background-color: #0258ad;
+    }
+  }
+
+  .pop-up{
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+  }
+
+  .pop-up__went, .pop-up__time{
+    font-size: 32px;
+    color: #fff;
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px rgb(66, 66, 221),
+    0 0 20px rgb(66, 66, 221),
+    0 0 30px rgb(66, 66, 221),
+    0 0 55px rgb(66, 66, 221),
+    0 0 80px rgb(66, 66, 221),
+  }
+  .pop-up__name{
+    font-size: 35px;
+    color: #fff;
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px rgb(66, 66, 221),
+    0 0 20px rgb(66, 66, 221),
+    0 0 30px rgb(66, 66, 221),
+    0 0 55px rgb(66, 66, 221),
+    0 0 80px rgb(66, 66, 221),
+  }

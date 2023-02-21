@@ -1,0 +1,28 @@
+get http://localhost:3000
+
+###
+get http://localhost:3000/garage/2
+
+###
+delete http://localhost:3000/garage/7
+
+###
+get http://localhost:3000/garage?_page=1&_limit=7
+
+
+###
+get http://localhost:3000/winners?_page=1&_limit=10&_sort=time&_order=ASC
+
+
+###
+PATCH http://localhost:3000/engine?id=1&status=started
+
+
+###
+PATCH http://localhost:3000/engine?id=1&status=stopped
+
+###
+PATCH http://localhost:3000/engine?id=1&status=drive
+
+###
+get http://localhost:3000/winners?id=1
