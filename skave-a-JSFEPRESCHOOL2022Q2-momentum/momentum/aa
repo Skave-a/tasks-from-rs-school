@@ -1,0 +1,40 @@
+// rnd
+const body = document.querySelector('body');
+let timeOfDay = getTimeOfDay();//- текущее время суток;
+const getRandomNum = () => Math.ceil(Math.random() * 20);
+let bgNum = getRandomNum().toString().padStart(2, 0);//- порядковый номер фонового изображения
+let randomNum = bgNum;
+console.log(`randomNum-1 - ${randomNum}`)
+
+// установка фона
+// function setBg() {
+//   body.style.backgroundImage = `url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timeOfDay}/${randomNum}.jpg')`;
+// };
+const setBg = () => body.style.backgroundImage = `url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timeOfDay}/${randomNum}.jpg')`;
+
+setBg()
+
+function getSlideNext() {
+  if (randomNum == 20) { return randomNum = '01'; }
+  else if (randomNum < 20) { return randomNum += 1; }
+  randomNum = randomNum.toString().padStart(2, 0);
+  setBg();
+}
+getSlideNext()
+
+//console.log()
+
+console.log(`randomNum2 - ${randomNum}`)
+
+// function getSlidePrev() {
+//   //let num = +bgNum;
+//   if (randomNum == 1) { return randomNum = '20'; }
+//   else if (randomNum < 20) randomNum -= 1;
+//   return randomNum.toString().padStart(2, 0);
+//   setBg(randomNum)
+// }
+
+const slideNext = document.querySelector('.slide-next');
+// const slidePrev = document.querySelector('.slide-prev');
+slideNext.addEventListener('click', getSlideNext);
+// slidePrev.addEventListener('click', getSlidePrev);

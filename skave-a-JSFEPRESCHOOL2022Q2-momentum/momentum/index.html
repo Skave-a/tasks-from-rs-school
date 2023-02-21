@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <!-- <link rel="stylesheet" href="css/weather.css" /> -->
+
+
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="player">
+      <div class="player-container">
+        <div class="player-controls">
+          <audio src="https://7oom.ru/audio/naturesounds/07%20Birds%20(7oom.ru).mp3"></audio>
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="music-info">
+          <h4 class="title"></h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+
+          </div>
+          <div class="music-time">
+            <div class="current-time">0:00</div>
+            <div class="max-duration"></div>
+          </div>
+          <div class="volume">
+            <p class="volume-show volume-border">90</p>
+            <i class="fa fa-volume-up volume-border" aria-hidden="true" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" class="volume-bar">
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Minsk" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <div class="pop-up__main">
+    <button class="pop-up__button"></button>
+    <div class="pop-up-container">
+      <div class="pop-up none">
+        <!-- <div class="pop-up__list"> -->
+        <ul class="pop-up__items">
+          <li class="pop-up__item general pop-up__bold-link">General</li>
+          <li class="pop-up__item blocks">Blocks</li>
+          <li class="pop-up__item about">About</li>
+        </ul>
+        <!-- </div> -->
+        <div class="pop-up__settings pop-up__general">
+          <!-- <h3 class="pop-up__caption">General</h3> -->
+          <p class="pop-up__p">Language</p>
+          <div class="pop-up__choose">
+            <p class="pop-up__p">RU</p>
+            <label class="switch">
+              <input type="checkbox" checked id="settingLanguage">
+              <span class="slider round"></span>
+            </label>
+            <p class="pop-up__p">EN</p>
+          </div>
+          <p class="pop-up__p ph">Photos</p>
+          <div class="form__radio-group">
+            <div class="form__radio-group-item">
+              <input id="radio-1" type="radio" name="radio" value="1">
+              <label for="radio-1">Unsplash</label>
+            </div>
+            <div class="form__radio-group-item">
+              <input id="radio-2" type="radio" name="radio" value="2">
+              <label for="radio-2">Flickr</label>
+            </div>
+            <div class="form__radio-group-item">
+              <input id="radio-3" type="radio" name="radio" value="3" checked>
+              <label for="radio-3">GitHub</label>
+            </div>
+          </div>
+          <p class="pop-up__p tg">Tags</p>
+          <input type="text" class="tags" value="Nature" />
+        </div>
+        <div class="pop-up__settings pop-up__blocks none">
+          <!-- <h3 class="pop-up__caption">Blocks</h3> -->
+          <ul class="blocks__items">
+            <li class="blocks__item t"> <span class="blocks__t">Time</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingTime">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item d"><span class="blocks__d">Date</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingDate">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item g"><span class="blocks__g">Greet</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingGreet">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item q"><span class="blocks__q">Quote</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingQuote">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item w"><span class="blocks__w">Weather</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingWeather">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item a"><span class="blocks__a">Audio</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingAudio">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="blocks__item td"><span class="blocks__td">ToDo</span>
+              <label class="switch">
+                <input type="checkbox" checked id="settingToDo">
+                <span class="slider round"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="pop-up__settings pop-up__about none">
+          <a href="https://rs.school/" target="_blank"><img src="assets\svg\rs.gif" alt="RS" class="footer__img"></a>
+          <a href="https://github.com/Skave-a" target="_blank" class="footer__img cat">
+            <img src="assets\svg\gith.svg" alt="RS" class="footer__img">
+          </a>
+          <p class="footer__p">Made with ❤️<br> by Skave-a. <br> 2022</p>
+        </div>
+        <img src="assets/svg/arrow.png" alt="enter" class="todo__arrow f">
+
+      </div>
+    </div>
+  </div>
+
+  <p class="todo-p">ToDo</p>
+  <div class="todo-container">
+    <div class="todo none">
+      <h3 class="todo__capt">ToDo</h3>
+      <ul class="todo__items none">
+
+      </ul>
+
+      <p class="todo__add-new">Add a todo to get started</p>
+      <button class="todo__button">New ToDo</button>
+      <div class="todo__enter-block none">
+        <input type="text" class="todo__task" placeholder="New ToDo" />
+        <img src="assets/svg/enter.png" alt="enter" class="todo__enter">
+      </div>
+    </div>
+  </div>
+
+  <script defer type="module" src="js/script.js"></script>
+  <script type="module" src="js/audio.js"></script>
+  <script type="module" src="js/settings.js"></script>
+  <script type="module" src="js/pop-up.js"></script>
+  <script type="module" src="js/languages.js"></script>
+  <script type="module" src="js/todo.js"></script>
+
+
+</body>
+
+</html>
