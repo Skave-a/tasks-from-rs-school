@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.navi {
+  margin-top: 0;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  background-color: #17252A;
+  color: #FEFFFF;
+  padding: 1px;
+  font-size: 23px;
+  height: 38px;
+  width: 185px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+
+  @media (max-width: 500px) {
+    width: 130px;
+  }
+}

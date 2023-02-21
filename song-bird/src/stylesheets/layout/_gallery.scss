@@ -1,0 +1,107 @@
+.gallery-block {}
+
+.gallery__items {
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    padding: 0;
+  }
+}
+
+.gallery__item {
+  width: 540px;
+  background: #2b7a78;
+  border-radius: 20px;
+  padding: 20px;
+
+  @media (max-width: 600px) {
+    width: 420px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+    width: 320px;
+  }
+}
+
+.item__img {
+  //width: 450px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  @media (max-width: 500px) {
+    height: 150px;
+  }
+}
+
+.item__name {
+  text-align: center;
+  font-size: 40px;
+  color: #cde3e6;
+  margin-bottom: 20px;
+}
+
+.item__description {
+  color: #cde3e6;
+  font-size: 20px;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.audio-container {}
+
+.audio-player.in-gallery {
+  width: 450px;
+
+  @media (max-width: 500px) {
+    width: 280px;
+    width: 250px;
+  }
+
+}
+
+.audio-player__play {}
+
+.audio-player__bar {}
+
+.bar__progress {}
+
+.progress {}
+
+.audio-player__time {}
+
+.current-time {}
+
+.max-duration {}
+
+.audio-player__volume {}
+
+.volume-on {}
+
+.volume-bar {}
+
+.p-span {
+  color: #FEFFFF;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.gallery-game {
+  margin: 0;
+  text-align: right;
+  color: #FEFFFF;
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: #17252A;
+    transition: all 0.5s;
+  }
+}

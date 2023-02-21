@@ -1,0 +1,61 @@
+.language {
+  width: 237px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang {
+  color: #FEFFFF;
+  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+.chousen {
+  color: #17252a;
+}
+
+#switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  background: #2B7A78;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #DEF2F1;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: #17252a;
+}
+
+input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 50px;
+}

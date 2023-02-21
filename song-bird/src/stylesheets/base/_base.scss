@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+
+body {
+  // background-image: url('../img/background.jpg');
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
+  background-color: $mid-grey;
+  background-color: #3AAFA9;
+  color: #FEFFFF;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Lobster', cursive;
+
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  //overflow: hidden;
+  position: relative;
+  //min-height: calc(100vh - 80px);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #2B7A78;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+}
+
+// * {
+//   outline: 2px red solid;
+// }
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+.level__item,
+.quiz__item,
+.next-level,
+.header__score,
+.quiz__info {
+  font-family: 'Lobster', cursive;
+}
+
+.none {
+  display: none;
+}

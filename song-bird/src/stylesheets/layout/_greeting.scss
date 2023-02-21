@@ -1,0 +1,142 @@
+.greeting__caption {
+  color: #FEFFFF;
+  text-align: center;
+  font-size: 100px;
+  //  margin-top: 200px;
+  line-height: 81px;
+  text-transform: uppercase;
+  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: right;
+  margin: 20px;
+
+  font-size: 85px;
+  line-height: 75px;
+
+  @media (max-width: 900px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 37px;
+    line-height: 39px;
+  }
+
+}
+
+.greeting__capt {
+  color: #17252A;
+}
+
+.wrap__capt {
+  margin: 0 auto;
+  padding: 50px;
+  border: solid 10px white;
+  width: 740px;
+  border: solid 10px white;
+  border-left-style: none;
+  border-top-style: none;
+  border-radius: 20px;
+  position: relative;
+  padding: 30px;
+  width: 640px;
+
+  @media (max-width: 900px) {
+    width: 500px;
+    padding: 10px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+
+  }
+}
+
+.greeting__bird {
+  position: absolute;
+  width: 70px;
+  top: 98px;
+  left: 66px;
+
+  width: 61px;
+  top: 77px;
+  left: 77px;
+
+  transition: all 1s ease-in;
+
+
+  @media (max-width: 900px) {
+    width: 48px;
+    top: 78px;
+    left: 100px;
+  }
+
+  @media (max-width: 500px) {
+    width: 32px;
+    top: 48px;
+    left: 37px;
+  }
+
+}
+
+.greeting__bird-ru {
+  transition: all 1s ease-in;
+  top: 5px;
+  left: 37px;
+}
+
+.greeting__btn {
+  // border: solid 10px white;
+  // border-right-style: none;
+  // border-bottom-style: none;
+  // border-radius: 20px;
+
+  padding: 30px;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 0;
+
+  //margin-bottom: 60px;
+  @media (max-width: 900px) {
+    width: auto;
+
+  }
+}
+
+.greeting__start {
+  background: #17252A;
+  color: white;
+  width: 500px;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background: #DEF2F1;
+    color: #17252A;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:active {
+    color: red;
+    transition: all 0.1s ease-in-out;
+    user-select: none;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+    width: 350px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    width: 275px;
+  }
+
+
+
+}

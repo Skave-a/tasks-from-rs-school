@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link rel="shortcut icon" href="src\img\icons\icon-bird.png" type="img/png">
+  <link rel="stylesheet" href="src\stylesheets\main.css">
+  <title>Song-bird</title>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="lds-ripple">
+      <img src="src/img/icons/pre.gif" alt="pre-img" class="pre-img">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header>
+      <div class="song-name">
+        <h1 class="h1">Song<span class="h1-span">Bird</span></h1>
+        <!-- <p class="language">en</p> -->
+
+        <p class="gallery none" changeLang="gallery">Gallery</p>
+        <p class="gallery-game none" changeLang="game">Game</p>
+      </div>
+      <p class="header__score none">
+        <span changeLang="score"> Score:</span> <span id="score-game"></span>
+      </p>
+    </header>
+    <div class="greeting">
+      <div class="language">
+        <p class="lang en chousen">EN</p>
+        <input type="checkbox" id="switch">
+        <label for="switch"></label>
+        <p class="lang ru">RU</p>
+      </div>
+      <div class="greeting__btn">
+        <p class="greeting__start" changeLang="Start-the-Game">Start the Game</p>
+      </div>
+      <div class="wrap__capt">
+        <p class="greeting__caption" changeLang="Explore">Explore <br>
+          <span class="greeting__capt">the birds</span>
+        </p>
+        <img src="src\img\an-bird.gif" alt="greeting__bird" class="greeting__bird">
+      </div>
+      <!-- <img src="src\img\Pngtree.png" alt="greeting__img" class="greeting__img"> -->
+    </div>
+    <div class="game none">
+      <nav class="nav">
+        <p class="navi main" changeLang="Main">Main</p>
+        <p class="navi restart" changeLang="Restart">Restart</p>
+        <!-- <p class="navi result">Result</p> -->
+      </nav>
+      <section class="level">
+        <ul class="level__items">
+          <li class="level__item choosen" title="Разминка" changeLang="Level-1">Level-1</li>
+          <li class="level__item" changeLang="Level-2">Level-2</li>
+          <li class="level__item" changeLang="Level-3">Level-3</li>
+          <li class="level__item" changeLang="Level-4">Level-4</li>
+          <li class="level__item" changeLang="Level-5">Level-5</li>
+          <li class="level__item" changeLang="Level-6">Level-6</li>
+        </ul>
+      </section>
+      <section class="audio">
+        <!-- <div class="bird-im"> -->
+        <img src="src\img\quiz-bird.jpg" alt="audio__bird" class="audio__bird">
+        <!-- </div> -->
+        <div class="audio-container">
+          <audio id="audio"></audio>
+          <h2 class="audio-player__name" changeLang="Name">Name</h2>
+          <div class="audio-player">
+            <img src="src\img\icons\play.svg" alt="play" class="audio-player__play">
+            <div class="audio-player__bar">
+              <div class="bar__progress">
+                <div class="progress"></div>
+              </div>
+              <div class="audio-player__time">
+                <div class="current-time">0:00</div>
+                <div class="max-duration">0:00</div>
+              </div>
+            </div>
+            <div class="audio-player__volume">
+              <img src="src\img\icons\volume.svg" alt="volume" class="volume-on">
+              <input type="range" min="0" max="100" value="90" class="volume-bar">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz">
+        <ul class="quiz__items">
+
+        </ul>
+        <audio src="src/audio/kolokolchik.mp3" id="sound-ok">
+        </audio>
+        <audio src="src/audio/ne-na-tu.mp3" id="sound-fail">
+        </audio>
+        <div class="quiz__info">
+          <p class="listen" changeLang="Listen-and-choose">Listen and choose</p>
+          <div class="info__block">
+
+          </div>
+        </div>
+      </section>
+      <button class="next-level blocked" changeLang="Next-Level">Next Level</button>
+    </div>
+    <div class="gallery-block none">
+      <!-- <p class="p-span">Song<span class="h1-span">Bird</span></p> -->
+      <ul class="gallery__items">
+        <!-- <img src="src/img/icons/play.svg" alt="play" class="audio-player__play">
+        <div class="audio-player__bar">
+          <div class="bar__progress">
+            <div class="progress"></div>
+          </div>
+          <div class="audio-player__time">
+            <div class="current-time">0:00</div>
+            <div class="max-duration">0:00</div>
+          </div>
+        </div>
+        <div class="audio-player__volume">
+          <img src="src/img/icons/volume.svg" alt="volume" class="volume-on">
+          <input type="range" min="0" max="100" value="90" class="volume-bar">
+        </div> -->
+
+      </ul>
+    </div>
+    <div class="results none">
+      <div class="result__cong-block">
+        <p class="results__capt" changeLang="My-congratulations!">My congratulations!</p>
+        <img src="src\img\result-bird-2.gif" alt="result__img" class="result__img">
+      </div>
+      <div class="results__score">
+        <span changeLang="Your-result">Your result: </span>
+        <span class="results__sc"></span>
+      </div>
+      <p class="results__restart" changeLang="Restart-the-Game">Restart the Game</p>
+    </div>
+    <footer>
+      <div class="wrapper footer">
+        <a href="https://rs.school/" target="_blank"><img src="src/img/icons/rs_school.svg" alt="RS"
+            class="footer__img"></a>
+        <a href="https://github.com/Skave-a" target="_blank" class="footer__img cat">
+        </a>
+        <p class="footer__p">Made with ❤️ by Skave-a. 2022</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- </div> -->
+  <script type="module" src="src/js/language.js"></script>
+  <script type="module" src="src/index.js"></script>
+</body>
+
+</html>

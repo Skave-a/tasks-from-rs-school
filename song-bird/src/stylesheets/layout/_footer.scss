@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.wrapper.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+  // width: 100%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+.footer__img {
+  height: 3rem;
+}
+
+.footer__img.cat {
+  margin-left: 6rem;
+  width: 3rem;
+  background-color: #000;
+  display: block;
+  -webkit-mask-image: url("../img/icons/gith.svg");
+  mask-image: url("../img/icons/gith.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+@media (max-width: 767px) {
+  .footer__img.cat {
+    margin-left: 0rem;
+  }
+}
+
+.footer__img.cat:hover {
+  background-color: #17252A;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer__p {
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
