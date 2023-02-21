@@ -1,0 +1,113 @@
+.about {
+    background: white;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:$tablet-width) {
+        max-width: 437px;
+        margin: 0 auto;
+    }
+}
+
+.about__dog {
+    @media (max-width:$tablet-width) {
+        order: 1;
+        margin: 0 auto;
+    }
+}
+
+.about__text {
+    @media (max-width:$tablet-width) {
+        margin-top: 80px;
+        margin-left: 4px;
+        margin-top: 79px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin: 0 auto;
+        margin-top: 42px;
+    }
+}
+
+.dog-img {
+    max-height: 408px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 175px;
+    margin-right: 120px;
+
+    @media (max-width:$tablet-width) {
+        margin: 80px 0 100px 0;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin: 42px 0 42.4px 0;
+        max-height: 353.6px;
+        max-width: 260px;
+    }
+}
+
+.about__title {
+    width: 370px;
+    height: 90px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-title;
+    margin-top: 94px;
+    margin-bottom: 25px;
+
+    @media (max-width:$tablet-width) {
+        margin-top: 0px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        width: 280px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+
+.about__subtitle-1 {
+    width: 430px;
+    height: 96px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 25px;
+
+    @media (max-width:$mobile-small-width) {
+        width: 270px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 22px;
+        text-align: justify;
+    }
+}
+
+.about__subtitle-2 {
+    width: 430px;
+    height: 144px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$mobile-small-width) {
+        width: 270px;
+        height: auto;
+        text-align: justify;
+        margin: 0 auto;
+    }
+}

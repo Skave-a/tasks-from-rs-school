@@ -1,0 +1,124 @@
+.start-screen {
+    background: #1f1204;
+    background: url(images/start-screen-background.png) no-repeat center;
+    background-size: cover;
+}
+
+.intro__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:$tablet-width) {
+        max-width: 569px;
+        margin: 0 auto;
+    }
+}
+
+.intro__wrapper-1 {
+    margin-right: 42px;
+
+    @media (max-width:$tablet-width) {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+}
+
+.intro__wrapper-2 {
+    margin-top: 60px;
+    max-width: 698px;
+    max-height: 728px;
+
+    @media (max-width:$tablet-width) {
+        margin-top: 100px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin-top: 105px;
+    }
+}
+
+.intro__title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $color-dark-title;
+    max-width: 310px;
+    margin-bottom: 42px;
+    padding-top: 223px;
+
+    @media (max-width:$tablet-width) {
+        padding-top: 60px;
+        //max-width: 569px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 25px;
+        text-align: center;
+        width: 230px;
+        margin: auto;
+        margin-bottom: 41px;
+        letter-spacing: 0.06em;
+    }
+}
+
+.intro__subtitle {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-s;
+    max-width: 460px;
+    margin-bottom: 42px;
+
+    @media (max-width:$mobile-small-width) {
+        text-align: center;
+    }
+}
+
+.intro__submit {
+    padding: 15px 45px;
+
+    @media (max-width:$tablet-width) {
+
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.submit__text {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    color: $color-dark-3xl;
+    letter-spacing: 0.06em;
+}
+
+
+@media (max-width:$tablet-width) {
+    .intro-pupy {
+        width: 569px;
+        height: 593px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width:$mobile-small-width) {
+    .intro-pupy {
+        width: 260px;
+        height: 271.77px;
+        margin-left: 40px;
+    }
+}
+
+
+.overlay.active {
+    // position: fixed;
+    // width: 100vw;
+    // height: 100vh;
+    background-color: rgba(41, 41, 41, 0.6);
+
+    //&body {
+    //overflow: hidden;
+    //}
+}

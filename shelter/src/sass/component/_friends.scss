@@ -1,0 +1,133 @@
+.ourfriends {
+    background: $color-light-l;
+
+    @media (max-width:$tablet-width) {
+        height: 1733px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        height: 1649px;
+    }
+}
+
+.ourfriends__title {
+    width: 400px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-title;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    @media (max-width:$mobile-small-width) {
+        padding-top: 42px;
+        width: 300px;
+        font-size: 25px;
+    }
+}
+
+.ourfriends__block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.5s ease 0s;
+
+    @media (max-width:$tablet-width) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 30px;
+        width: 580px;
+        margin: 0 auto;
+        margin-top: 15px;
+        column-gap: 40px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin-top: 27px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 30px;
+        width: auto;
+    }
+}
+
+.ourfriends__item {
+    background: $color-light-s;
+    width: 270px;
+    height: 435px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    border-radius: 9px;
+
+    @media (max-width:$tablet-width) {
+        margin: auto;
+    }
+}
+
+.ourfriends__item.none {
+    @media (max-width:$tablet-width) {
+        display: none;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        display: none;
+    }
+}
+
+.ourfriends__item.none-320 {
+    @media (max-width:$mobile-small-width) {
+        display: none;
+    }
+}
+
+.ourfriends__item:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+    // offset-x | offset-y | blur-radius | color 
+    .ourfriends__button {
+        background: $color-primary-light;
+        border: none;
+    }
+}
+
+//Наведение на карточку меняет курсор, делает подсветку кнопки Learn more и меняет фон.
+
+.ourfriends__item:last-child {
+    margin-right: 0;
+}
+
+.ourfriends__pic {
+    margin-bottom: 30px;
+    //margin-top: 15px;
+}
+
+.ourfriends__name {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-title;
+    margin-bottom: 30px;
+}
+
+.slider-pets {
+    height: 930px;
+    overflow: hidden;
+    margin-top: 45px;
+
+    @media (max-width:$tablet-width) {
+        height: 1365px;
+        margin-top: 15px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin-top: 27px;
+    }
+}

@@ -1,0 +1,133 @@
+.header-friend {
+    position: sticky;
+    top: 0px;
+    background-color: $color-dark-title;
+    z-index: 1;
+}
+
+.header__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    height: 120px;
+
+    @media (max-width:$mobile-small-width) {
+        //width: 260px;
+    }
+}
+
+.header__wrap.active {
+    gap: 43px;
+    justify-content: flex-end;
+    background-color: rgba(41, 41, 41, 0.6);
+
+}
+
+
+.logo1 {
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-title;
+}
+
+.undlogo1 {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: $color-dark-3xl;
+    padding-top: 10px;
+    margin-left: 4px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:$mobile-small-width) {
+        display: block;
+        width: 243px;
+        padding-top: 248px;
+        margin: 0 auto;
+    }
+}
+
+.header__item {
+    margin-right: 35px;
+
+    @media (max-width:$mobile-small-width) {
+        margin-bottom: 43px;
+        margin-right: 0;
+    }
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__links {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-title;
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 32px;
+        white-space: nowrap;
+        text-align: center;
+        //color: $color-dark-s;
+    }
+}
+
+.header__links1 {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-title;
+    border-bottom: 3px solid $color-primary;
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 32px;
+        white-space: nowrap;
+        text-align: center;
+        //color: $color-dark-title;
+    }
+}
+
+.header__logo.active {
+    z-index: 4;
+    color: white;
+}
+
+.header__links.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.overlay.active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 1;
+}
+
+.header__nav.pet.active {
+    transition: all 1s ease 0s;
+
+    @media (max-width:$mobile-small-width) {
+        position: fixed;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background-color: white;
+        //display: none;
+    }
+}

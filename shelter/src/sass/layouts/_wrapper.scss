@@ -1,0 +1,22 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media (max-width:$tablet-width) {
+    .wrapper {
+        max-width: 708px;
+        //overflow: hidden;
+    }
+}
+
+@media (max-width:$mobile-small-width) {
+    .wrapper {
+        max-width: 300px;
+    }
+}
+
+@media (max-width:$tablet-width) {}
+
+@media (max-width:$mobile-small-width) {}

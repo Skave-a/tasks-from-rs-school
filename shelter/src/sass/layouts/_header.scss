@@ -1,0 +1,148 @@
+@media (max-width:$mobile-small-width) {
+    .wrapper.head {
+        max-width: none;
+        width: auto;
+    }
+}
+
+
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+    align-items: center;
+
+    //z-index: 2;
+
+    @media (max-width:$tablet-width) {
+        padding-top: 30px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        //width: 257px;
+    }
+}
+
+.header__wrapper.active {
+    gap: 43px;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    margin-left: 10px;
+    z-index: 3;
+}
+
+.header__logo.active {
+    z-index: 4;
+    margin-left: 10px;
+}
+
+.main-logo {
+    font-weight: 400;
+    line-height: 110%;
+    color: $color-primary;
+    letter-spacing: 0.06em;
+}
+
+.under-logo {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: $color-dark-title;
+    padding-top: 10px;
+    margin-left: 4px;
+}
+
+.header__nav {
+    transition: all 1s ease 0s;
+
+    @media (max-width:$mobile-small-width) {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100%;
+        background-color: $color-dark-3xl;
+        //display: none;
+    }
+}
+
+.header__nav.active {
+    right: 0;
+    transition: all 1s ease 0s;
+    z-index: 1;
+}
+
+
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:$mobile-small-width) {
+        display: block;
+        width: 243px;
+        padding-top: 248px;
+        margin: 0 auto;
+    }
+
+}
+
+.header__item {
+    margin-right: 35px;
+
+    @media (max-width:$mobile-small-width) {
+        margin-bottom: 43px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+
+
+.header__link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-s;
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 32px;
+        white-space: nowrap;
+        text-align: center;
+    }
+}
+
+.header__link.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.header__link1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-title;
+    border-bottom: 3px solid $color-primary;
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 32px;
+        white-space: nowrap;
+        text-align: center;
+    }
+}

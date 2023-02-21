@@ -1,0 +1,21 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/sass/style.scss src/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}

@@ -1,0 +1,109 @@
+.help {
+    background: $color-dark-title;
+    padding-top: 80px;
+    height: 611px;
+
+    @media (max-width:$tablet-width) {
+        height: 779px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        height: 745px;
+        padding-top: 42px;
+    }
+}
+
+.help__block {
+    @media (max-width:$tablet-width) {
+        width: 170px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        width: 130px;
+        height: 87px;
+    }
+}
+
+.help__block.last {
+    @media (max-width:$mobile-small-width) {
+        margin: 0 55% 0 0;
+    }
+}
+
+.help__title {
+    width: 310px;
+    height: 90px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    color: $color-title;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    letter-spacing: 0.06em;
+
+    @media (max-width:$mobile-small-width) {
+        h3 {
+            font-size: 25px;
+        }
+
+        margin-bottom: 42px;
+        height: 64px;
+    }
+}
+
+.help__icons {
+    margin-left: 87px;
+    width: 1026px;
+    display: flex;
+    column-gap: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+    letter-spacing: 0.06em;
+
+    @media (max-width:$tablet-width) {
+        width: 630px;
+        column-gap: 30px;
+        row-gap: 55px;
+        margin: 0 auto;
+        column-gap: 60px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        width: 290px;
+        height: 555px;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+.help__pic {
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    @media (max-width:$mobile-small-width) {
+        margin-bottom: 20px;
+        height: 50px;
+        //width: 50px;
+    }
+}
+
+.help__name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    color: $color-title;
+    margin-bottom: 55px;
+    white-space: nowrap;
+
+    @media (max-width:$tablet-width) {
+        margin-bottom: 0px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        font-size: 15px;
+    }
+}

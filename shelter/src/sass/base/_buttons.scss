@@ -1,0 +1,47 @@
+button {
+    border-radius: 100px;
+    background-color: $color-primary;
+    font-family: 'Georgia', 'Wensley', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-size: 17px;
+    border: none;
+}
+
+button:hover {
+    background: $color-primary-light;
+    transition: all .3s;
+}
+
+.button__bordered {
+    width: 187px;
+    height: 52px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: $color-light-s;
+}
+
+.button__round {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: $color-light-l;
+}
+
+.button__round:hover {
+    background: $color-primary-light;
+    transition: all .3s;
+    border: none;
+}

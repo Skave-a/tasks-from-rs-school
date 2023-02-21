@@ -1,0 +1,160 @@
+.ourfriends__button {
+    width: 187px;
+    height: 52px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    margin: 10px 0px;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: $color-light-s;
+    margin: 0 auto;
+    display: block;
+}
+
+.ourfriends__button:hover {
+    background: $color-primary-light;
+}
+
+.ourfriends__buttons {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 45px;
+
+    @media (max-width:$tablet-width) {
+        margin-top: 55px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        //margin-top: 42px;
+        width: 300px;
+    }
+}
+
+
+
+.first__page,
+.prev__page {
+    background: $color-light-l;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    background: $color-light-l;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    @media (max-width:$mobile-small-width) {
+        margin-right: 8px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.first__page,
+.prev__page,
+.next__page,
+.last__page:hover {
+    background: $color-light-l;
+}
+
+
+.num__page {
+    background: $color-primary;
+    border-radius: 100px;
+    margin: 0 auto;
+    border: none;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    cursor: default;
+
+    @media (max-width:$tablet-width) {
+        margin: 0 auto;
+        margin-bottom: 76px;
+        margin-right: 20px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin-right: 8px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 42px;
+    }
+}
+
+.num__page:hover {
+    background: $color-primary;
+}
+
+.next__page,
+.last__page {
+    background: $color-light-l;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+
+    @media (max-width:$mobile-small-width) {
+        margin-right: 8px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.next__page:hover {
+    background: $color-primary;
+}
+
+.last__page:hover {
+    background: $color-primary;
+}
+
+.last__page {
+    margin-right: 0px;
+}
+
+
+
+.next__page.button__inactive,
+.last__page.button__inactive,
+.first__page.button__inactive,
+.prev__page.button__inactive {
+    border: 2px solid $color-dark-s;
+    color: $color-dark-s;
+    cursor: default;
+
+    &:hover {
+        background: $color-light-l;
+    }
+}

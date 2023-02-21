@@ -1,0 +1,13 @@
+@mixin media-laptop {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media (max-width: $mobile-small-width) {
+        @content;
+    }
+}
+
+//@media screen and

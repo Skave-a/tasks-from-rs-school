@@ -1,0 +1,221 @@
+.friends {
+    background: $color-light-l;
+}
+
+.friends__wrapper {
+    padding-top: 80px;
+
+    @media (max-width:$mobile-small-width) {
+        padding-top: 42px;
+    }
+}
+
+.friends__title {
+    width: 400px;
+    height: 90px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-title;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @media (max-width:$mobile-small-width) {
+        h3 {
+            font-size: 25px;
+        }
+
+        margin-bottom: 42px;
+        width: 300px;
+        height: 64px;
+    }
+}
+
+.friends__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 60px;
+
+    @media (max-width:$mobile-small-width) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 42px;
+        justify-content: center;
+        column-gap: 80px;
+    }
+}
+
+
+.friends__cats {
+    display: flex;
+}
+
+.friends__item {
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 90px;
+    display: flex;
+    position: relative;
+    //width: 2790px;
+
+    @media (max-width:$tablet-width) {
+        grid-column-gap: 0px;
+        //width: 2440px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        grid-template-columns: none;
+        order: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        //width: 2160px;
+        font-size: 0;
+    }
+}
+
+//повторяется, потому что пробую по разному слайдер - здесь item удалила
+// .friends__cats {
+//     display: flex;
+// }
+
+.friends__cats {
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 90px;
+    display: flex;
+    position: relative;
+    //width: 2790px;
+    transition: all 0.5s ease 0s;
+
+    @media (max-width:$tablet-width) {
+        grid-column-gap: 40px;
+        //width: 2440px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        grid-template-columns: none;
+        order: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        //width: 2160px;
+        font-size: 0;
+        grid-column-gap: 0px;
+    }
+}
+
+.card-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-light-s;
+    width: 270px;
+    height: 435px;
+    margin: 0 auto;
+    border-radius: 9px;
+
+    .card-img {
+        margin-bottom: 30px;
+    }
+
+    .card-name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        margin-bottom: 30px;
+        color: $color-title;
+        margin-left: 4px;
+    }
+
+}
+
+.card-pic.kat {
+    @media (max-width:$tablet-width) {
+        margin-right: 40px;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        margin: 0 auto;
+        margin-right: 0px;
+    }
+}
+
+.card-pic.none {
+    @media (max-width:$tablet-width) {
+        display: none;
+    }
+
+    @media (max-width:$mobile-small-width) {
+        display: none;
+    }
+}
+
+.card-pic.none-2 {
+    @media (max-width:$mobile-small-width) {
+        display: none;
+    }
+}
+
+// .card-pic.none-3 {
+//     display: none;
+// }
+
+.card-pic:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+    .button__bordered {
+        background: $color-primary-light;
+        border: none;
+    }
+}
+
+.button-arrow-1 {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$mobile-small-width) {
+        order: 1;
+        //margin: 0 auto;
+    }
+}
+
+.button-arrow-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width:$mobile-small-width) {
+        order: 2;
+        //margin: 0 auto;
+    }
+}
+
+.main__button {
+    padding: 15px 45px;
+    width: 261px;
+    height: 52px;
+    margin: 0 auto;
+    display: block;
+
+    .link__button {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        color: $color-dark-3xl;
+        align-self: center;
+        margin: 10px 0px;
+    }
+}
+
+.friends__button {
+    padding-bottom: 100px;
+
+    @media (max-width:$mobile-small-width) {
+        padding-bottom: 42px;
+    }
+}
