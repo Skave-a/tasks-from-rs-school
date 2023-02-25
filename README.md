@@ -17,6 +17,10 @@ https://rolling-scopes-school.github.io/skave-a-JSFEPRESCHOOL2022Q2/travel/
 
 ![image](https://user-images.githubusercontent.com/101521194/220367131-3a48dd55-2aea-4342-8aeb-a560d8645421.png)
 
+https://rolling-scopes-school.github.io/skave-a-JSFE2022Q3/Zoo/
+
+![image](https://user-images.githubusercontent.com/101521194/221357116-7d839dec-8672-41d7-a829-fa998f7ac1a6.png)
+
 https://rolling-scopes-school.github.io/skave-a-JSFE2022Q3/15-puzzle/
 
 ![image](https://user-images.githubusercontent.com/101521194/220367368-f4c37643-1a63-4d0b-a5ef-4c8b0cd5acdc.png)
